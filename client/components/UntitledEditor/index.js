@@ -60,6 +60,8 @@ class UntitledEditor extends Component {
         const quillBinding = new Y.QuillBinding(editorState, this.quill.current.getEditor())
 
       }
+
+      getYjsBinding(){}
     
       render() {
         return (
