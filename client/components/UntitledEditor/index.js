@@ -27,12 +27,15 @@ class UntitledEditor extends Component {
     constructor(props) {
         super(props)
         this.state = { text: '' }
-        this.handleChange = this.handleChange.bind(this)
+        this.handleChange = this.handleChange.bind(this);
+        this.editorRef = React.createRef();
       }
     
       handleChange(value) {
         this.setState({ text: value })
       }
+
+      getYjsBinding(){}
     
       render() {
         return (
@@ -40,6 +43,7 @@ class UntitledEditor extends Component {
             value={this.state.text}
             onChange={this.handleChange}
             modules={quillModules}
+            ref={this.editorRef}
         />
         )
       }
