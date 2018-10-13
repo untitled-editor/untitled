@@ -4080,6 +4080,14 @@ querystring@0.2.0:
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
   integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
 
+quill-cursors@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/quill-cursors/-/quill-cursors-1.0.3.tgz#81c813cae32a38977d5a322f17aad3336718d190"
+  integrity sha512-rS81BZIlHdWXucf00qo5NIp3QrpT/4JHwoHTRlR48fO+k6AzBJvVyGoNrWkO5yzdlwUwHSw3jPoLWfxyzLOoxw==
+  dependencies:
+    rangefix "^0.2.5"
+    tinycolor2 "^1.4.1"
+
 quill-delta@^3.6.2:
   version "3.6.3"
   resolved "https://registry.yarnpkg.com/quill-delta/-/quill-delta-3.6.3.tgz#b19fd2b89412301c60e1ff213d8d860eac0f1032"
@@ -4138,6 +4146,11 @@ range-parser@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
   integrity sha1-9JvmtIeJTdxA3MlKMi9hEJLgDV4=
+
+rangefix@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/rangefix/-/rangefix-0.2.5.tgz#bce78c921b23582bae211f597464a591fd1a94f9"
+  integrity sha1-vOeMkhsjWCuuIR9ZdGSlkf0alPk=
 
 rc@^1.2.7:
   version "1.2.8"
@@ -4821,6 +4834,11 @@ tiny-inflate@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/tiny-inflate/-/tiny-inflate-1.0.2.tgz#93d9decffc8805bd57eae4310f0b745e9b6fb3a7"
   integrity sha1-k9nez/yIBb1X6uQxDwt0Xptvs6c=
+
+tinycolor2@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.1.tgz#f4fad333447bc0b07d4dc8e9209d8f39a8ac77e8"
+  integrity sha1-9PrTM0R7wLB9TcjpIJ2POaisd+g=
 
 to-arraybuffer@^1.0.0:
   version "1.0.1"

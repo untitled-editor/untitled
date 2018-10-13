@@ -1,8 +1,29 @@
-const React = require('react')
-const ReactQuill = require('react-quill')
-require('react-quill/dist/quill.snow.css')
+/**
+ * React dependencies
+ */
+import React, {Component} from 'react'
+import ReactQuill, {Quill} from 'react-quill'
+import 'react-quill/dist/quill.snow.css'
 
-class UntitledEditor extends React.Component {
+/**
+ * Quill dependencies
+ */
+import QuillCursors from 'quill-cursors'
+
+/**
+ * Quill configuration
+ */
+Quill.register('modules/cursors', QuillCursors)
+const quillModules = {
+    cursors: {
+        autoRegisterListener: false
+    }
+}
+
+/**
+ * React component
+ */
+class UntitledEditor extends Component {
     constructor(props) {
         super(props)
         this.state = { text: '' }
@@ -15,11 +36,14 @@ class UntitledEditor extends React.Component {
     
       render() {
         return (
-          <ReactQuill value={this.state.text}
-                      onChange={this.handleChange} />
+          <ReactQuill
+            value={this.state.text}
+            onChange={this.handleChange}
+            modules={quillModules}
+        />
         )
       }
     
 }
 
-module.exports = UntitledEditor
+export default UntitledEditor

@@ -1,6 +1,6 @@
-const React = require('react')
+import React from 'react'
 
-const UntitledEditor = require('./UntitledEditor')
+import UntitledEditor from './UntitledEditor'
 const App = _ => (<UntitledEditor />)
 
-module.exports = App
+export default App
