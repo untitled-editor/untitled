@@ -22,9 +22,12 @@ function extend (Y) {
           window.addEventListener('ewieruu', (ev) => console.log(ev))
 
           const signaller = new RTCSignaller(url, window.userId, message => {
-            console.log(message, message.data)
-            const x = this.receiveMessage(window.otherUserId, message.data, true)
-            console.error('undefined p[lease', x)
+              const t = document.querySelector('.ql-editor p')
+              console.log(t)
+              console.log(message.data)
+              t.innerHTML = message.data
+            // const x = this.receiveMessage(window.otherUserId, message.data, true)
+            // console.error('undefined p[lease', x)
                 // .then(console.error)
           });
 
@@ -41,7 +44,8 @@ function extend (Y) {
         }
         send (uid, message) {
             if (this.signaller.channel) {
-                this.signaller.sendMessage(message)
+                const t = document.querySelector('.ql-editor p').innerText
+                this.signaller.sendMessage(t)
                 console.log('send', uid, message)
             }
         }
@@ -49,7 +53,8 @@ function extend (Y) {
             // message = JSON.stringify(message)
             // const array = new Uint32Array(message)
             if (this.signaller.channel) {
-                this.signaller.sendMessage(message)
+                const t = document.querySelector('.ql-editor p').innerText
+                this.signaller.sendMessage(t)
                 console.log('broadcast', message)
             }
         }
