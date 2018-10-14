@@ -55135,7 +55135,8 @@ function (_Component) {
           name: 'memory'
         },
         connector: {
-          name: 'websockets-client'
+          name: 'websockets-client',
+          url: 'https://untitled-ws-server.herokuapp.com'
         }
       });
       var users = y.define('users', _yjs.default.Array);
