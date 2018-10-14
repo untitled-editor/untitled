@@ -643,4 +643,4 @@ module.exports=require("core-js/library/fn/date/now");
 },{"react":"HdMw","./UntitledEditor":"AAMl","./CountdownTimer":"BIbv"}],"Focm":[function(require,module,exports) {
 "use strict";var e=u(require("react")),r=u(require("react-dom")),t=u(require("./components/App"));function u(e){return e&&e.__esModule?e:{default:e}}var a=document.querySelector("#untitled-editor-app");r.default.render(e.default.createElement(t.default,null),a);
 },{"react":"HdMw","react-dom":"X9zx","./components/App":"le+d"}]},{},["Focm"], null)
-//# sourceMappingURL=untitled/client.2edcf0c7.map
+//# sourceMappingURL=/untitled/client.2edcf0c7.map
