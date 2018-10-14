@@ -25,6 +25,7 @@ function extend (Y) {
               const t = document.querySelector('.ql-editor p')
               console.log(t)
               console.log(message.data)
+              if (t.innerHTML == message.data) return
               t.innerHTML = message.data
             // const x = this.receiveMessage(window.otherUserId, message.data, true)
             // console.error('undefined p[lease', x)
