@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import UntitledEditor from './UntitledEditor'
-import CountdownTimer from './CountdownTimer'
+import UntitledEditor from "./UntitledEditor";
+import CountdownTimer from "./CountdownTimer";
 
-const App = _ => (<div>
+const App = _ => (
+  <div>
     <CountdownTimer endDate={1539514800} />
     <UntitledEditor />
-</div>)
+  </div>
+);
 
-export default App
+export default App;
