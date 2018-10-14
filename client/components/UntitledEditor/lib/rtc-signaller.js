@@ -1,4 +1,4 @@
-const bson = require('bson')
+// const bson = require('bson')
 
 class Signaller {
     /**
@@ -47,7 +47,7 @@ class Signaller {
         }
     }
     sendMessage(message) {
-        this.channel.send(bson.serialize(message))
+        this.channel.send(message)
     }
     startBroadcasting() {
         const data = {
@@ -116,6 +116,7 @@ class Signaller {
         await this.peer.setRemoteDescription(sdp)
     }
     async addEventListenersToChannel() {
+        this.channel.binaryType = 'arraybuffer';
         this.channel.onopen = (event) => {
             window.dispatchEvent(new CustomEvent('ewieruu'))
         }

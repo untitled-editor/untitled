@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+      console.error(window.location.hash)
+      if (window.location.hash === "#2") {
+        window.userId = "12345555"
+        window.otherUserId = "2333333"
+      } else {
+        window.userId = "2333333"
+        window.otherUserId = "12345555"
+      }
+    </script>
       <script src="https://cdn.webrtc-experiment.com/view/websocket.js"> </script>
   </head>
   <body>

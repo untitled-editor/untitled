@@ -13,6 +13,7 @@
   },
   "scripts": {
     "start": "parcel index.html",
+    "start1": "parcel index1.html --port 8080",
     "lint": "prettier --write **.js"
   },
   "dependencies": {
