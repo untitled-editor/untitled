@@ -67,8 +67,7 @@ class UntitledEditor extends Component {
                 name: 'memory'
             },
             connector: {
-                name: 'websockets-client',
-                url: 'https://untitled-ws-server.herokuapp.com'
+              name: 'webrtc-signaller'
             }
         })
         this.setState({y})
